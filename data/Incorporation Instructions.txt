@@ -1,0 +1,21 @@
+This datapack was mostly designed to be incorporated into other data packs, and by accident, I had made it rather
+easy to do so.
+
+Simply copy the entire "book_binder" folder and paste it into the "data" folder of your data pack!
+
+
+"<world_name>"
+ \_"datapacks"
+    \_"Book Binder"
+       \_"data"
+          \_"book_binder" <-- Copy this folder...
+
+
+"<world_name>"
+ \_"datapacks"
+    \_"<name of your awesome datapack>"
+       \_"data" <-- ... And paste it into this one. (or you could just move it or something...)
+
+
+That's it! Alternatively, you could just install this datapack seperatly, and tell everyone that it's a required
+dependency or something.
