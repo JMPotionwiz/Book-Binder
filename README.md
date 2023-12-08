@@ -21,6 +21,20 @@ A Minecraft data pack for generating random books. Mainly meant to be incorporat
 `book_binder:book/output {no arguments}`: Attempts to create a writen book item entity containing a copy of the pages within storage. Note: said item entity despawns in 2 game ticks, to prevent clutter. Fails if there aren't any pages within storage.
 
 `book_binder:book/generate {pages:<integer>}`: Attempts to create a writen book item entity containing "pages" number of random pages from storage. Note: said item entity despawns in 2 game ticks, to prevent clutter. Each page within storage can occur only once in the generated book, and are randomly arranged in said book. Attempting to generate a book with more pages then what's been stored will result in a book with as many pages as what's in storage. Attempting to use integers less than or equal to one for the argument "pages" results in a book with only one page. Fails if there aren't any pages within storage.
+<br/><br/>
+
+> Rearrange the pages into a new book (without affecting the original pages)
 
 <br/>
-WIP, I'll continue working on this tomorrow...
+
+`book_binder:construct/add {page:<integer>}`: Attempts to append the page at index "page" within storage to a second set of pages within storage. Changes made to one set of pages isn't reflected in the other set. Fails if the targeted page doesn't exist.
+
+`book_binder:construct/remove {page:<integer>}`: Attempts to remove the page at index "page" from the second set of pages within storage. Fails if the targeted page doesn't exist.
+
+`book_binder:construct/output {no arguments}`: Attempts to create a writen book item entity containing a copy of the second set of pages within storage. Note: said item entity despawns in 2 game ticks, to prevent clutter. Fails if there aren't any pages in the second set of pages within storage.
+
+`book_binder:construct/clear {no arguments}`: Removes all pages from the second set of pages within storage.
+<br/><br/><br/>
+
+---
+Reading all of this back, it sounds kind of confusing. I might make a simple video to demonstrate these functions...
