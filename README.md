@@ -1,7 +1,10 @@
 # Book Binder
-A Minecraft data pack for generating random books. Mainly meant to be incorporated into other data packs.<br/><br/><br/>
+A Minecraft data pack for generating random books. Mainly meant to be incorporated into other data packs.<br/>
 
+> [!NOTE]
+> This project is most certainly abandoned; I haven't done anything with it in a while, and Minecraft no longer stores item information using NBT. I will, however, leave this repository public so that anyone interested can still look at it.
 
+<br/><br/>
 ### Functions
 
 > Store your book in the clouds! (disclaimer: only one book can be stored per world)
@@ -34,7 +37,3 @@ A Minecraft data pack for generating random books. Mainly meant to be incorporat
 `book_binder:construct/output {no arguments}`: Attempts to create a writen book item entity containing a copy of the second set of pages within storage. Note: said item entity despawns in 2 game ticks, to prevent clutter. Fails if there aren't any pages in the second set of pages within storage.
 
 `book_binder:construct/clear {no arguments}`: Removes all pages from the second set of pages within storage.
-<br/><br/><br/>
-
----
-Reading all of this back, it sounds kind of confusing. I might make a simple video to demonstrate these functions...
